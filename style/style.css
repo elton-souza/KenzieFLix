@@ -1,0 +1,112 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 1280px;
+  height: 720px;
+  background-color: #121214;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  margin: 42px 0 73px 0;
+}
+.title {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 61px;
+}
+.avatarList {
+  width: 718px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 102px;
+}
+.avatarListItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.boxAvatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #1e1e20;
+  border-radius: 12px;
+  transition: all 0.4s;
+}
+.avatarUser {
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e20;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: fill;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s;
+}
+.user1 {
+  background-image: url("../images/avatar1.svg");
+}
+.user2 {
+  background-image: url("../images/avatar2.svg");
+}
+.user3 {
+  background-image: url("../images/avatar3.svg");
+}
+.iconPlus {
+  background-image: url("../images/icon-plus.svg");
+}
+.userName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9c9c9c;
+  text-align: center;
+  margin-top: 16px;
+  transition: all 0.4s;
+}
+.buttonManageProfile {
+  width: 206px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.avatarListItem:hover > span {
+  color: #fff;
+}
+.avatarListItem:hover .boxAvatar {
+  border-color: #fff;
+}
+.avatarListItem:hover .avatarUser {
+  transform: scale(1.2)
+}
+.avatarListItem:hover .iconPlus {
+  background-image: url("../images/hover-icon.svg");
+  transform: scale(1);
+}
+.buttonManageProfile:hover {
+  background-color: #fff;
+  color: #000;
+}
